@@ -4,10 +4,9 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import {CustomeModuleModule} from './custome-module/custome-module.module';
-import { HttpClient } from 'selenium-webdriver/http';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -17,9 +16,9 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     CustomeModuleModule,
-    HttpClientModule,
     AppRoutingModule,
     FormsModule
   ],
