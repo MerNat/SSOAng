@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
   theToken: UserToken;
   info: string;
   error: HttpErrorResponse;
+  emailInput = 'form-control';
+  passwordInput = 'form-control';
   constructor(private fb: FormBuilder,
               private authService: AuthService
             ) {}
@@ -30,7 +32,11 @@ export class LoginComponent implements OnInit {
               console.log('Login Status: ' + data.status + ' Token: ' + this.theToken.token);
             }, error => {
                 this.error = error;
-                console.log('Login Error: ' + this.error.status);
+                if (this.error.status === 400) {
+                  this.emailInput = 'form-control is-invalid';
+                  this.passwordInput = 'form-control is-invalid';
+                  console.log('Login Error: ' + this.error.status);
+                }
             });
   }
 

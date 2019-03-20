@@ -1,19 +1,20 @@
 .login-home {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/assets/img/water-1330252_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    .jumbotron{
-        background-color: whitesmoke;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .btn{
-        border-radius: 0px;
-    }
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/img/water-1330252_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+//   filter: blur(1px); /* Filter affects the whole element that is specified and cannot be overriden from within the affected area */
+  .jumbotron {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .btn {
+    border-radius: 0px;
+  }
 }
